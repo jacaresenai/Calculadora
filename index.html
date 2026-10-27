@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Imersão Dev - Aula 02 - Calculadora</title>
+    <!-- Conecta o arquivo HTML ao arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título principal da página -->
+        <h1 class="page-title">CALCULADORA</h1>
+        <h1 class="page-title">tabajara</h1>
+        
+        <!-- Logotipos informativos da aula -->
+        <img src="https://png.pngtree.com/png-clipart/20230527/original/pngtree-basketball-logo-png-image_9171255.png" class="page-logo" alt="Logo Calculadora">
+
+      
+        <!-- Div de espaçamento entre o topo e a calculadora -->
+        <div class="espaçamento"></div>
+      
+        <!-- Bloco principal que envelopa a calculadora -->
+        <div class="calculadora">
+            <!-- O visor onde aparecem as contas e os resultados -->
+            <div class="tela" id="tela"></div>
+
+            <!-- Grade com todos os botões interativos -->
+            <div class="botoes">
+                <!-- Coluna dos botões de operações matemáticas -->
+                <div class="contas">
+                    <div>&divide;</div>
+                    <div>&times;</div>
+                    <div>-</div>
+                    <div>+</div>
+                </div>
+
+                <!-- Painel com os botões numéricos organizados por linhas -->
+                <div class="painel-numeros">
+                    <div class="numeros">
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div class="numeros">
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                    </div>
+                    <div class="numeros">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                    <div class="numeros">
+                        <div>0</div>
+                        <div>.</div>
+                        <div id="limpar">C</div>
+                    </div>
+                </div>
+
+                <!-- Botão de calcular o resultado final -->
+                <div class="igual" id="resultado">=</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conecta o JavaScript que adiciona a lógica de cálculo à página -->
+    <script src="script.js"></script>
+</body>
+</html>

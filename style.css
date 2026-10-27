@@ -1,0 +1,97 @@
+.page-title {
+  text-align:center;
+  font-family:sans-serif;
+  font-size: 50px;
+}
+
+.page-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%; /* defina a largura desejada, menor que 100% */
+}
+.espaçamento {
+  margin-bottom: 15px;
+}
+/* Caixa principal da calculadora */
+.calculadora {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Alinha os blocos principais (contas, números e igual) lado a lado */
+.botoes {
+    display: flex;
+    gap: 8px;
+}
+
+/* Coluna dos operadores (+, -, *, /) */
+.contas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Painel central onde ficam as linhas de números */
+.painel-numeros {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Cada linha horizontal de números (ex: 7, 8, 9) */
+.numeros {
+    display: flex;
+    gap: 8px;
+}
+
+/* Estilo individual para cada botão numérico e de operação */
+.contas div, .numeros div {
+    background-color: #3e3e3e;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Estilo específico para o botão de igual (=) ficar com a altura correta */
+.igual {
+    background-color: #3e3e3e;
+    color: white;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Efeito visual ao passar o rato por cima dos botões */
+.contas div:hover, .numeros div:hover, .igual:hover {
+    background-color: #555;
+}
+/* Estilo profissional para o visor da calculadora */
+.tela {
+    background-color: #ffffff; /* Fundo branco para destacar os números digitados */
+    color: #2b2b2b; /* Cor escura para o texto da conta */
+    height: 50px; /* Altura ideal para caber o texto com conforto */
+    margin-bottom: 12px; /* Distância entre o visor e os botões abaixo dele */
+    border-radius: 6px; /* Cantos arredondados */
+    font-size: 24px; /* Tamanho bom para leitura */
+    font-weight: bold;
+    text-align: right; /* Alinha os números sempre para a direita, como calculadora real */
+    padding: 0 12px; /* Espaçamento interno para o texto não colar nas bordas */
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente no visor */
+    justify-content: flex-end; /* Garante o alinhamento à direita junto com o flex */
+    box-sizing: border-box;
+}
